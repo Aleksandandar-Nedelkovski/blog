@@ -1,0 +1,14 @@
+<%- include ./partials/header %>
+
+<h1>Home</h1>
+<p><%= paragraph1 %></p>
+<% posts.forEach(function (post) { %>
+<% var myString = post.message %>
+<% var myTruncatedString = myString.substring(0,100) + "..."%>
+<h1> <%= post.title %> </h1>
+<p> <%= myTruncatedString %>
+    <a href="posts/<%= post.title %>">Read More</a>
+</p>
+<%}); %>
+
+<%- include ./partials/footer %>
