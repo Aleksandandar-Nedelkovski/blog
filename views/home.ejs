@@ -7,7 +7,7 @@
 <% var myTruncatedString = myString.substring(0,100) + "..."%>
 <h1> <%= post.title %> </h1>
 <p> <%= myTruncatedString %>
-    <a href="posts/<%= post.title %>">Read More</a>
+    <a href="/posts/<%= post._id %>">Read More</a>
 </p>
 <%}); %>
 
